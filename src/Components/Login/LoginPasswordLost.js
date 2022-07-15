@@ -18,6 +18,7 @@ function LoginPasswordLost() {
         login: email.value, 
         url: window.location.href.replace('perdeu', 'resetar')
       })
+      await request(url, options)
     }
   }
 
